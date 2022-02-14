@@ -1,0 +1,978 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title>Astroy</title>
+	<meta charset='utf-8'>	
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<meta name='title' content='Astroy'>
+	<meta name='subject' content='Astroy'>
+	<meta name='publisher' content='윤소영'>
+	<meta name='location' content='Seoul Korea'>
+	<meta name='author' content='Astroy'>
+	<meta name='author-	Date' content='2020-02-19'>
+	<meta name='copyright' content='Astroy'>
+	<meta name='description' content='Astroy'>
+	<meta name='keywords' content='Astroy'>
+	<meta name='classification' content='Astroy'>
+	<meta name='robots' content='index,follow'>
+	
+	<link rel='shortcut icon' href='img/logo.png'>
+	<link rel='apple-touch-icon' href='img/logo.png'>
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">		
+	<link rel="stylesheet" type='text/css' href="css/font-awesome.min.css">	
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	
+	
+	<link rel='stylesheet' type='text/css' href='css/style.css'>
+	<link rel='stylesheet' type='text/css' href='css/response.css'>
+	
+	
+	<!-- 제공받은 자바스크립트 라이브러리 프로그램 - 오픈소스 -->
+	<script src='js/lib/jquery-1.12.4.min.js'></script>
+	<script src='js/lib/jquery.touchSwipe.js'></script>
+	<script src='js/lib/jquery.easing.1.3.js'></script>
+		
+	<!-- 사용자 js -->
+	<script src='js/header.js'></script>
+	<script src='js/video.js'></script>
+	<script src='js/sec2Font.js'></script>
+	<script src='js/sec3Txt.js'></script>
+	<script src='js/sec4Slide.js'></script>
+	<script src='js/sec5Txt.js'></script>
+	<script src='js/sec6Txt.js'></script>
+	<script src='js/goTop.js'></script>
+	<script src='js/urlFn.js'></script>
+	
+	
+</head>
+<body>
+<div id='wrap'>
+
+	<ul id='skip'>
+		<li><a href='#nav'>메뉴바로가기</a></li>
+		<li><a href='#main'>메인바로가기</a></li>
+		<li><a href='#footer'>하단바로가기</a></li>
+	</ul>
+	
+	
+	
+	<header id='header'>
+		<div class='gnb'>
+			<div class='header-wrap'>
+			
+				<div>
+					<div class='header-container'>
+						<h1 class='logoBt-wrap'> 
+							<a href='#main' onclick='urlFn("index.html");' class='logoBt' title='logo'><img src='img/logo.png' alt=''>&nbsp;</a>
+						</h1>
+						
+						<nav class='nav'>
+							<ul class='fixedclear'>
+								<li>
+									<a href='#' class='mainBt mainBt1'>ABOUT</a>
+									<div class='sub sub1'>
+										<div>
+											<div>
+												<ul class='subMenu-wrap fixedclear'>
+													<li><a href='#' class='subBt'>ABOUT US</a></li>
+													<li><a href='#' class='subBt'>PEOPLE</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									
+								</li>
+								<li>
+									<a href='#' class='mainBt mainBt2'>WORK</a>
+								</li>
+								<li>
+									<a href='#' class='mainBt mainBt3'>PRESS</a>
+									<div class='sub sub3'>
+										<div>
+											<div>
+												<ul class='subMenu-wrap fixedclear'>
+													<li><a href='#' class='subBt'>PRESS RELEASES</a></li>
+													<li><a href='#main2' onclick='urlFn("notice.html")' class='subBt'>NOTICE</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									
+								</li>
+								<li>
+									<a href='#' class='mainBt mainBt4'>IR</a>
+									<div class='sub sub4'>
+										<div>
+											<div>
+												<ul class='subMenu-wrap fixedclear'>
+													<li><a href='#' class='subBt'>공시정보</a></li>
+													<li><a href='#main3' onclick='urlFn("index3.html")' class='subBt'>재무재표</a></li>
+													<li><a href='#' class='subBt'>주가정보</a></li>
+													<li><a href='#' class='subBt'>IR자료실</a></li>
+													<li><a href='#' class='subBt'>공고</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									
+								</li>
+								<li>
+									<a href='#' class='mainBt mainBt5'>CONTACT</a>
+								</li>
+							</ul>
+						</nav>
+						
+						<div class='lang-wrap'>
+							<ul class='fixedclear'>
+								<li><a href='#' class='langBt'>KR</a></li>
+								<li><a href='#' class='langBt'>EN</a></li>
+								<li><a href='#' class='langBt'>CH</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<!-- 헤더 모바일 앱바 -->
+					<div class='header-modal-line-wrap'>
+						<div>
+							<a href='javascript:' class='modalmenuBt'>
+								<i class='line line0 blind'>line</i>
+								<i class='line line1 blind'>line</i>
+								<i class='line line2 blind'>line</i>
+							</a>
+						</div>
+					</div>	
+					
+					
+					<!-- ///////////헤더 모바일 모달////////////////////////////////// -->
+					<div class='header-modal'>
+						<div>
+
+						
+							<div class='language-wrap'>
+								<span><a href='#'>KR</a></span>
+								<span><a href='#'>EN</a></span>
+								<span><a href='#'>CH</a></span>
+								<span><a href='javascript:' class='modalCloseBt'><i class='fa fa-close'></i></a></span>
+							</div>
+							<div class='header-modal-menu'>
+								<ul>
+									<li>
+										<div>
+											<a href='javascript:' class='modalArrowBt'>ABOUT<i class='fa fa-angle-down'></i></a>
+				
+										</div>
+										<div class='header-modal-sub'>
+											<div>
+												<span><a href='#'>ABOUT US</a></span>
+												<span><a href='#'>PEOPLE</a></span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href='javascript:'>WORK</a>
+											
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href='javascript:' class='modalArrowBt'>PRESS<i class='fa fa-angle-down'></i></a>
+										</div>
+										<div class='header-modal-sub'>
+											<div>
+												<span><a href='#'>PRESS RELEASES</a></span>
+												<span><a href='#main2' onclick='urlFn("notice.html")'>NOTICE</a></span>
+											</div>
+										</div>
+										
+									</li>
+									<li>
+										<div>
+											<a href='javascript:' class='modalArrowBt'>IR<i class='fa fa-angle-down'></i></a>
+										</div>
+										<div class='header-modal-sub'>
+											<div>
+												<span><a href='#'>공시재무</a></span>
+												<span><a href='#main3' onclick='urlFn("index3.html")'>재무제표</a></span>
+												<span><a href='#'>주가정보</a></span>
+												<span><a href='#'>IR자료실</a></span>
+												<span><a href='#'>공고</a></span>
+											</div>
+										</div>
+										
+									</li>
+									<li>
+										<div>
+											<a href='javascript:'>CONTACT</a>
+											
+										</div>
+									</li>
+								</ul>
+									
+							</div>
+						</div>
+					</div>	
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<main id='main'>
+		<section id='section1'>
+			<div>
+				<div class='sec1-video'> <!--비디오뷰박스-->
+					<video id='mainVideo' loop autoplay  muted  playsinline poster='img/videoposter.jpg'>
+						<source src='video/KO_KINGD_1920x1080.mp4' type='video/mp4'>
+					</video>
+					<div class='txt'>
+						<h3>
+							Creative writers<br>
+							& producers
+						</h3>
+					</div>
+				</div>
+				<div class='sec1-next'>
+					<a href='javascript:'>SCROLL<i></i></a>
+				</div>
+			</div>
+		</section>
+		
+		<section id='section2'> <!--전체배경흰색-->
+			<div> <!--1500 margin0 auto 랠러티브-->
+				<div class='onAir'> <!--앱솔루트-->
+					<h3>ON AIR</h3>
+				</div>
+				<div class='sec2-img-container'>
+					<div class='sec2-img-view'>
+						<a href='#'><img src='img/1580950434_1526100_20200206095644661.jpg' alt='' title='onAir-image'></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id='section3'>
+			<div> <!--백그라운드 이미지-->
+				<div> <!--1500 margin0 auto-->
+					<div class='sec3-txt-wrap'>
+						<div class='sec3-title'>
+							<h3>WORKS</h3>
+						</div>
+						<div class='sec3-more'>
+							<a href='#'>
+								<span>MORE VIEW →</span>
+								<i class='sec3-line blind'>line</i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id='section4'>
+			<div>
+				<h2 class='empty blind'>empty</h2>
+				<div class='sec4-container'>
+					<div class='sec4-view'>
+						<ul class='sec4-wrap fixedclear'>
+							<!--///////////////////마지막5개 추가슬라이드//////////////////-->
+
+							<li class='slideA slide31'>
+								<div>
+									<a href='#'>
+										<img src='img/iris.jpg' alt=''>
+										<span>
+											<i class='txt1'>아이리스</i>
+											<i class='fa fa-clock-o txt2'>2009.10.14</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide32'>
+								<div>
+									<a href='#'>
+										<img src='img/hospotal2.jpg' alt=''>
+										<span>
+											<i class='txt1'>종합병원2</i>
+											<i class='fa fa-clock-o txt2'>2008.11.19</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide33'>
+								<div>
+									<a href='#'>
+										<img src='img/airCity.jpg' alt=''>
+										<span>
+											<i class='txt1'>에어시티</i>
+											<i class='fa fa-clock-o txt2'>2007-05-19</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide34'>
+								<div>
+									<a href='#'>
+										<img src='img/hiEnna.jpg' alt=''>
+										<span>
+											<i class='txt1'>하이에나</i>
+											<i class='fa fa-clock-o txt2'>2006.10.11</i>
+										</span>
+									</a>
+								</div>
+							</li> 
+							<li class='slideA slide35'>
+								<div>
+									<a href='#'>
+										<img src='img/' alt='' >
+										<span>
+											<i class='txt1'></i>
+											<i class='txt2'></i>
+										</span>
+									</a>
+								</div>
+							</li> 
+							<!-- /////////////////////마지막5개 추가슬라이드//////////////////////-->
+						
+						
+						
+							<li class='slideA slide1'> <!--본슬라이드-->
+								<div>
+									<a href='#'>
+										<img src='img/1580950434_1526100_20200206095644661.jpg' alt=''>
+										<span>
+											<i class='txt1'>킹덤 시즌2</i>
+											<i class='far fa-clock txt2'>2020.03.13</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide2'>
+								<div>
+									<a href='#'>
+										<img src='img/haja.jpg' alt=''>
+										<span>
+											<i class='txt1'>하자있는 인간들</i>
+											<i class='fa fa-clock-o txt2'>2019.11.27</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide3'>
+								<div>
+									<a href='#'>
+										<img src='img/firstlove2.png' alt=''>
+										<span>
+											<i class='txt1'>첫사랑은 처음이라서 시즌2</i>
+											<i class='fa fa-clock-o txt2'>2019.07.26</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide4'>
+								<div>
+									<a href='#'>
+										<img src='img/firstlove1.jpg' alt=''>
+										<span>
+											<i class='txt1'>첫사랑은 처음이라서 시즌1</i>
+											<i class='fa fa-clock-o txt2'>2019.04.18</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide5'>
+								<div>
+									<a href='#'>
+										<img src='img/kingdom1.jpg' alt=''>
+										<span>
+											<i class='txt1'>킹덤(시즌1)</i>
+											<i class='fa fa-clock-o txt2'>2019.01.25</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							
+							<li class='slideA slide6'>
+								<div>
+									<a href='#'>
+										<img src='img/main4.jpg' alt=''>
+										<span>
+											<i class='txt1'>용왕직전연상니(勇往直前恋上你)</i>
+											<i class='fa fa-clock-o txt2'>2018.12.27</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide7'>
+								<div>
+									<a href='#'>
+										<img src='img/hundredday.jpg' alt=''>
+										<span>
+											<i class='txt1'>백일의 낭군님</i>
+											<i class='fa fa-clock-o txt2'>2018.09.10</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide8'>
+								<div>
+									<a href='#'>
+										<img src='img/woomanki.jpg' alt=''>
+										<span>
+											<i class='txt1'>우리가 만난 기적</i>
+											<i class='fa fa-clock-o txt2'>2018.04.02</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide9'>
+								<div>
+									<a href='#'>
+										<img src='img/churiqueen.jpg' alt=''>
+										<span>
+											<i class='txt1'>추리의 여왕 시즌2</i>
+											<i class='fa fa-clock-o txt2'>2018.02.28</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide10'>
+								<div>
+									<a href='#'>
+										<img src='img/churiqueen1.jpg' alt=''>
+										<span>
+											<i class='txt1'>추리의 여왕 시즌1</i>
+											<i class='fa fa-clock-o txt2'>2017.04.05</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							
+							<li class='slideA slide11'>
+								<div>
+									<a href='#'>
+										<img src='img/fantastic.jpg' alt=''>
+										<span>
+											<i class='txt1'>판타스틱</i>
+											<i class='fa fa-clock-o txt2'>2016.09.02</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide12'>
+								<div>
+									<a href='#'>
+										<img src='img/fivechildren.jpg' alt=''>
+										<span>
+											<i class='txt1'>아이가 다섯</i>
+											<i class='fa fa-clock-o txt2'>2016.02.20</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide13'>
+								<div>
+									<a href='#'>
+										<img src='img/signal.jpg' alt=''>
+										<span>
+											<i class='txt1'>시그널</i>
+											<i class='fa fa-clock-o txt2'>2016.01.22</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide14'>
+								<div>
+									<a href='#'>
+										<img src='img/itsFirst.jpg' alt=''>
+										<span>
+											<i class='txt1'>처음이라서</i>
+											<i class='fa fa-clock-o txt2'>2015.10.07</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide15'>
+								<div>
+									<a href='#'>
+										<img src='img/second20years.jpg' alt=''>
+										<span>
+											<i class='txt1'>두번째 스무살</i>
+											<i class='fa fa-clock-o txt2'>2015.08.28</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							
+							<li class='slideA slide16'>
+								<div>
+									<a href='#'>
+										<img src='img/last.jpg' alt=''>
+										<span>
+											<i class='txt1'>라스트</i>
+											<i class='fa fa-clock-o txt2'>2015.07.24</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide17'>
+								<div>
+									<a href='#'>
+										<img src='img/liveyouToday.jpg' alt=''>
+										<span>
+											<i class='txt1'>오늘부터 사랑해</i>
+											<i class='fa fa-clock-o txt2'>2015.04.06</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide18'>
+								<div>
+									<a href='#'>
+										<img src='img/family.jpg' alt=''>
+										<span>
+											<i class='txt1'>떴다! 패밀리</i>
+											<i class='fa fa-clock-o txt2'>2015.01.03</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide19'>
+								<div>
+									<a href='#'>
+										<img src='img/lovelyToMe.jpg' alt=''>
+										<span>
+											<i class='txt1'>내겐 너무 사랑스러운 그녀</i>
+											<i class='fa fa-clock-o txt2'>2014.09.17</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide20'>
+								<div>
+									<a href='#'>
+										<img src='img/medicalTop.jpg' alt=''>
+										<span>
+											<i class='txt1'>메디컬 탑 팀</i>
+											<i class='fa fa-clock-o txt2'>2013.10.09</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							
+							<li class='slideA slide21'>
+								<div>
+									<a href='#'>
+										<img src='img/whoAyou1.jpg' alt=''>
+										<span>
+											<i class='txt1'>나에게만 보이는 너, 후아유</i>
+											<i class='fa fa-clock-o txt2'>2013.07.29</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide22'>
+								<div>
+									<a href='#'>
+										<img src='img/bestSunsin.jpg' alt=''>
+										<span>
+											<i class='txt1'>최고다 이순신</i>
+											<i class='fa fa-clock-o txt2'>2013.03.09</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide23'>
+								<div>
+									<a href='#'>
+										<img src='img/mayi.jpg' alt=''>
+										<span>
+											<i class='txt1'>마의</i>
+											<i class='fa fa-clock-o txt2'>2012.10.01</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide24'>
+								<div>
+									<a href='#'>
+										<img src='img/protectBoss.jpg' alt=''>
+										<span>
+											<i class='txt1'>보스를 지켜라</i>
+											<i class='fa fa-clock-o txt2'>2011.08.03</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide25'>
+								<div>
+									<a href='#'>
+										<img src='img/ladySmell2.jpg' alt=''>
+										<span>
+											<i class='txt1'>여인의 향기</i>
+											<i class='fa fa-clock-o txt2'>2011.07.23</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							
+							<li class='slideA slide26'>
+								<div>
+									<a href='#'>
+										<img src='img/youngFacePretty.jpg' alt=''>
+										<span>
+											<i class='txt1'>동안미녀</i>
+											<i class='fa fa-clock-o txt2'>2011.05.02</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide27'>
+								<div>
+									<a href='#'>
+										<img src='img/myPrincess.jpg' alt=''>
+										<span>
+											<i class='txt1'>마이프린세스</i>
+											<i class='fa fa-clock-o txt2'>2011.01.05</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide28'>
+								<div>
+									<a href='#'>
+										<img src='img/ImLegend.jpg' alt=''>
+										<span>
+											<i class='txt1'>나는 전설이다</i>
+											<i class='fa fa-clock-o txt2'>2010.08.02</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide29'>
+								<div>
+									<a href='#'>
+										<img src='img/marryMe.jpg' alt=''>
+										<span>
+											<i class='txt1'>결혼해주세요</i>
+											<i class='fa fa-clock-o txt2'>2010.06.19</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide30'>
+								<div>
+									<a href='#'>
+										<img src='img/cinderella.jpg' alt=''>
+										<span>
+											<i class='txt1'>신데렐라언니</i>
+											<i class='fa fa-clock-o txt2'>2010.03.31</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							
+							<li class='slideA slide31'>
+								<div>
+									<a href='#'>
+										<img src='img/iris.jpg' alt=''>
+										<span>
+											<i class='txt1'>아이리스</i>
+											<i class='fa fa-clock-o txt2'>2009.10.14</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide32'>
+								<div>
+									<a href='#'>
+										<img src='img/hospotal2.jpg' alt=''>
+										<span>
+											<i class='txt1'>종합병원2</i>
+											<i class='fa fa-clock-o txt2'>2008.11.19</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide33'>
+								<div>
+									<a href='#'>
+										<img src='img/airCity.jpg' alt=''>
+										<span>
+											<i class='txt1'>에어시티</i>
+											<i class='fa fa-clock-o txt2'>2007-05-19</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide34'>
+								<div>
+									<a href='#'>
+										<img src='img/hiEnna.jpg' alt=''>
+										<span>
+											<i class='txt1'>하이에나</i>
+											<i class='fa fa-clock-o txt2'>2006.10.11</i>
+										</span>
+									</a>
+								</div>
+							</li> 
+							<li class='slideA slide35'>
+								<div>
+									<a href='#'>
+										<img src='img/' alt='' >
+										<span>
+											<i class='txt1'></i>
+											<i class='txt2'></i>
+										</span>
+									</a>
+								</div>
+							</li> <!--본슬라이드-->
+							
+							
+							
+							<li class='slideA slide1'> <!--본슬라이드-->
+								<div>
+									<a href='#'>
+										<img src='img/1580950434_1526100_20200206095644661.jpg' alt=''>
+										<span>
+											<i class='txt1'>킹덤 시즌2</i>
+											<i class='far fa-clock txt2'>2020.03.13</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide2'>
+								<div>
+									<a href='#'>
+										<img src='img/haja.jpg' alt=''>
+										<span>
+											<i class='txt1'>하자있는 인간들</i>
+											<i class='fa fa-clock-o txt2'>2019.11.27</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide3'>
+								<div>
+									<a href='#'>
+										<img src='img/firstlove2.png' alt=''>
+										<span>
+											<i class='txt1'>첫사랑은 처음이라서 시즌2</i>
+											<i class='fa fa-clock-o txt2'>2019.07.26</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide4'>
+								<div>
+									<a href='#'>
+										<img src='img/firstlove1.jpg' alt=''>
+										<span>
+											<i class='txt1'>첫사랑은 처음이라서 시즌1</i>
+											<i class='fa fa-clock-o txt2'>2019.04.18</i>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class='slideA slide5'>
+								<div>
+									<a href='#'>
+										<img src='img/kingdom1.jpg' alt=''>
+										<span>
+											<i class='txt1'>킹덤(시즌1)</i>
+											<i class='fa fa-clock-o txt2'>2019.01.25</i>
+										</span>
+									</a>
+								</div>
+							</li>	<!--처음5개 추가슬라이드-->						
+						</ul><!--랩끝-->
+					</div> <!--뷰끝-->
+					
+					
+				</div> <!--컨테이너끝-->
+				
+					<span class='sec4PrevBt-wrap'><a href='javascript:' class='sec4PrevBt slideBt'><img src='img/arr_lb.png' alt=''></a></span>
+					<span class='sec4NextBt-wrap'><a href='javascript:' class='sec4NextBt slideBt'><img src='img/arr_rb.png' alt=''></a></span>
+				
+					<ul class='pageBt-wrap'>
+						<li><a href='javascript:' class='pageBt'><i class='pageBar'></i></a></li>
+						<li><a href='javascript:' class='pageBt'><i class='pageBar'></i></a></li>
+						<li><a href='javascript:' class='pageBt'><i class='pageBar'></i></a></li>
+						<li><a href='javascript:' class='pageBt'><i class='pageBar'></i></a></li>
+						<li><a href='javascript:' class='pageBt'><i class='pageBar'></i></a></li>
+						<li><a href='javascript:' class='pageBt'><i class='pageBar'></i></a></li>
+						<li><a href='javascript:' class='pageBt'><i class='pageBar'></i></a></li>
+					</ul>
+			</div>
+		</section>
+		<section id='section5'>
+			<div> <!--위아래 패딩 많음-->
+				<div> <!--백그라운드-->
+					<div class='sec5-txt-wrap'>
+						<div class='sec5-txt1'><h3>CREATIVE WRITERS & PRODUCERS</h3></div>
+						<div class='sec5-txt2'><h2>A S T O R Y</h2></div>
+						<div class='sec5-txt3'>
+							<p>드라마 한 편이 재미와 감동을 넘어 그 이상을 전달할 수 있다는 신념으로 시작된 드라마 제작사 에이스토리<br>
+								이제 아시아를 넘어 전 세계인에게 사랑받는 콘텐츠 스튜디오로 성장하겠습니다.
+							</p>
+						</div>
+						<div class='sec5-txt4'>
+							<div> 
+								<a href='#' class='icon-wrap'>
+									<span>MORE VIEW →<i class='sec5-line blind'>line</i></span>
+								</a>
+							</div> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id='section6'>
+			<div> <!--max width:1500-->
+				<div class='sec6-left'> <!--왼쪽-->
+					<div> <!--왼쪽 백그라운드-->
+						<div class='sec6-title'>
+							<h3>PRESS RELEASES</h3>
+						</div>
+					</div> 
+				</div>
+				<div class='sec6-right'> <!--오른쪽-->
+					<div> <!--갈색박스-->
+						<a href='#'>
+							<span>MORE VIEW →<i class='blind'>line</i></span>
+							
+						</a>
+					</div> 
+				</div>
+				<div class='sec6-bottom'> <!--아래:애니메이션-->
+					<div>
+						<ul>
+							<li class='sec6-txtBx sec6-txtBx1'>
+								<div>
+									<a href='#'>
+										<h4>"'킹덤'의 주인공이 되보세요" 컴투스, '스토리픽' 티저 영상 공개</h4>
+										<span>2020-03-05</span>
+									</a>	
+								</div>
+							</li>
+							<li class='sec6-txtBx sec6-txtBx2'>
+								<div>
+									<a href='#'>
+										<h4>[종합]"바람은 시즌10까지"..'킹덤2' 주지훈→김은희, 떡밥 회수 자신한 진화된 세계관</h4>
+										<span>2020-03-05</span>
+									</a>
+								</div>
+							</li>
+							<li class='sec6-txtBx sec6-txtBx3'>
+								<div>
+									<a href='#'>
+										<h4>‘킹덤2’ 김성훈·박인제 감독 “공동 연출 긍정적, 작품 본질에 집중했다”</h4>
+										<span>2020-03-05</span>
+									</a>	
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+			
+	<footer id='footer'>
+		<div> <!--100%, 보더바텀-->
+			<div class='footer-row1'>
+				<div>
+					<ul class='fixedclear'> 
+						<li>
+							<div>
+								<span>
+									<a href='#'>ABOUT</a>
+								</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span>
+									<a href='#'>WORK</a>
+								</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span>
+									<a href='#'>PRESS</a>
+								</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span>
+									<img src='img/f_logo.png' alt=''>
+								</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span>
+									<a href='#'>IR</a>
+								</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span>
+									<a href='#'>CONTACT</a>
+								</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span>
+									<a href='#'>LANGUAGE</a>
+								</span>
+							</div>
+						</li>
+					</ul>
+				</div>	
+			</div>
+			<div class='footer-row2'>
+				<div> 
+					<div class='footer-row2-top'>
+						<p>
+							서울특별시 마포구 월드컵북로 361 한솔교육빌딩 11층 (상암동)
+						</p>
+					</div>
+					<div class='footer-row2-bottom fixedclear'>
+						<p>
+							(03908)11F,Hansol BLDG,361,World Cup buk-ro,Mapo-gu,Seoul,Korea(Sangam-dong)TEL 02.2088.2585FAX. 02.2088.2589
+						</p>
+						<span>
+							Copyright (c) ASTORY. All Rights Reserved
+						</span>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</footer>		
+	
+	<div class='goTop-wrap'>
+		<div>
+			<a href='javascript:' class='gotopBt' title='top'>
+				<span class='goTop-Bg'>
+					<i class='icon fas fa-long-arrow-alt-up'></i>
+					<span>TOP</span>
+				</span>
+			</a>
+		</div>
+	</div>
+	
+	
+</div>
+</body>
+</html>
+
+
+
+

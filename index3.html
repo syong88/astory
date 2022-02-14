@@ -1,0 +1,915 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title>Astroy</title>
+	<meta charset='utf-8'>	
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<meta name='title' content='Astroy'>
+	<meta name='subject' content='Astroy'>
+	<meta name='publisher' content='윤소영'>
+	<meta name='location' content='Seoul Korea'>
+	<meta name='author' content='Astroy'>
+	<meta name='author-	Date' content='2020-02-19'>
+	<meta name='copyright' content='Astroy'>
+	<meta name='description' content='Astroy'>
+	<meta name='keywords' content='Astroy'>
+	<meta name='classification' content='Astroy'>
+	<meta name='robots' content='index,follow'>
+	
+	<link rel='shortcut icon' href='img/logo.png'>
+	<link rel='apple-touch-icon' href='img/logo.png'>
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">		
+	<link rel="stylesheet" type='text/css' href="css/font-awesome.min.css">	
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	
+	
+	<link rel='stylesheet' type='text/css' href='css/style.css'>
+	<link rel='stylesheet' type='text/css' href='css/response.css'>
+	
+	
+	<!-- 제공받은 자바스크립트 라이브러리 프로그램 - 오픈소스 -->
+	<script src='js/lib/jquery-1.12.4.min.js'></script>
+	<script src='js/lib/jquery.touchSwipe.min.js'></script>
+	<script src='js/lib/jquery.easing.1.3.js'></script>
+		
+	<!-- 사용자 js -->
+	<script src='js/header.js'></script>
+	<script src='js/noticeAJAX.js'></script>
+	<script src='js/m3_sec1Bg.js'></script>
+	<script src='js/m3_sec2Font.js'></script>
+	<script src='js/m3_tab.js'></script>
+	<script src='js/m3_graph_timer.js'></script>
+	<script src='js/m3_graph_view.js'></script>
+	<script src='js/m3_graph_resize.js'></script>
+	<script src='js/goTop.js'></script>
+	<script src='js/urlFn.js'></script>
+
+	
+</head>
+<body>
+<div id='wrap'>
+
+	<ul id='skip'>
+		<li><a href='#nav'>메뉴바로가기</a></li>
+		<li><a href='#main'>메인바로가기</a></li>
+		<li><a href='#footer'>하단바로가기</a></li>
+	</ul>
+	
+	<header id='header'>
+		<div class='gnb'>
+			<div class='header-wrap'>
+			
+				<div>
+					<div class='header-container'>
+						<h1 class='logoBt-wrap'> 
+							<a href='#main' onclick='urlFn("index.html");' class='logoBt' title='logo'><img src='img/logo.png' alt=''>&nbsp;</a>
+						</h1>
+						
+						<nav class='nav'>
+							<ul class='fixedclear'>
+								<li>
+									<a href='#' class='mainBt mainBt1'>ABOUT</a>
+									<div class='sub sub1'>
+										<div>
+											<div>
+												<ul class='subMenu-wrap fixedclear'>
+													<li><a href='#' class='subBt'>ABOUT US</a></li>
+													<li><a href='#' class='subBt'>PEOPLE</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									
+								</li>
+								<li>
+									<a href='#' class='mainBt mainBt2'>WORK</a>
+								</li>
+								<li>
+									<a href='#' class='mainBt mainBt3'>PRESS</a>
+									<div class='sub sub3'>
+										<div>
+											<div>
+												<ul class='subMenu-wrap fixedclear'>
+													<li><a href='#' class='subBt'>PRESS RELEASES</a></li>
+													<li><a href='#main2' onclick='urlFn("notice.html")' class='subBt'>NOTICE</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									
+								</li>
+								<li>
+									<a href='#' class='mainBt mainBt4'>IR</a>
+									<div class='sub sub4'>
+										<div>
+											<div>
+												<ul class='subMenu-wrap fixedclear'>
+													<li><a href='#' class='subBt'>공시정보</a></li>
+													<li><a href='#main3' onclick='urlFn("index3.html")' class='subBt'>재무재표</a></li>
+													<li><a href='#' class='subBt'>주가정보</a></li>
+													<li><a href='#' class='subBt'>IR자료실</a></li>
+													<li><a href='#' class='subBt'>공고</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									
+								</li>
+								<li>
+									<a href='#' class='mainBt mainBt5'>CONTACT</a>
+								</li>
+							</ul>
+						</nav>
+						
+						<div class='lang-wrap'>
+							<ul class='fixedclear'>
+								<li><a href='#' class='langBt'>KR</a></li>
+								<li><a href='#' class='langBt'>EN</a></li>
+								<li><a href='#' class='langBt'>CH</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<!-- 헤더 모바일 앱바 -->
+					<div class='header-modal-line-wrap'>
+						<div>
+							<a href='javascript:' class='modalmenuBt'>
+								<i class='line line0 blind'>line</i>
+								<i class='line line1 blind'>line</i>
+								<i class='line line2 blind'>line</i>
+							</a>
+						</div>
+					</div>	
+					
+					
+					<!-- ///////////헤더 모바일 모달////////////////////////////////// -->
+					<div class='header-modal'>
+						<div>
+
+						
+							<div class='language-wrap'>
+								<span><a href='#'>KR</a></span>
+								<span><a href='#'>EN</a></span>
+								<span><a href='#'>CH</a></span>
+								<span><a href='javascript:' class='modalCloseBt'><i class='fa fa-close'></i></a></span>
+							</div>
+							<div class='header-modal-menu'>
+								<ul>
+									<li>
+										<div>
+											<a href='javascript:' class='modalArrowBt'>ABOUT<i class='fa fa-angle-down'></i></a>
+				
+										</div>
+										<div class='header-modal-sub'>
+											<div>
+												<span><a href='#'>ABOUT US</a></span>
+												<span><a href='#'>PEOPLE</a></span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href='javascript:'>WORK</a>
+											
+										</div>
+									</li>
+									<li>
+										<div>
+											<a href='javascript:' class='modalArrowBt'>PRESS<i class='fa fa-angle-down'></i></a>
+										</div>
+										<div class='header-modal-sub'>
+											<div>
+												<span><a href='#'>PRESS RELEASES</a></span>
+												<span><a href='#main2' onclick='urlFn("notice.html")'>NOTICE</a></span>
+											</div>
+										</div>
+										
+									</li>
+									<li>
+										<div>
+											<a href='javascript:' class='modalArrowBt'>IR<i class='fa fa-angle-down'></i></a>
+										</div>
+										<div class='header-modal-sub'>
+											<div>
+												<span><a href='#'>공시재무</a></span>
+												<span><a href='#main3' onclick='urlFn("index3.html")'>재무제표</a></span>
+												<span><a href='#'>주가정보</a></span>
+												<span><a href='#'>IR자료실</a></span>
+												<span><a href='#'>공고</a></span>
+											</div>
+										</div>
+										
+									</li>
+									<li>
+										<div>
+											<a href='javascript:'>CONTACT</a>
+											
+										</div>
+									</li>
+								</ul>
+									
+							</div>
+						</div>
+					</div>	
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<main id='main3'>
+		<section id='section1'>
+			<div> <!--랠러티브-->
+				<div class='sec1-BgImg'> <!--백그라운드, 앱솔루트, 애니메이션-->
+					<div>
+						<h3>IR</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id='section2'>
+			<div>
+				<div>
+					<ul class='fixedclear'>
+						<li>
+							<div>
+								<span><a href='javascript:' class='sec2TabBt'>공시정보</a></span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span><a href='javascript:' class='sec2TabBt addTabBg'>재무제표</a></span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span><a href='javascript:' class='sec2TabBt'>주가정보</a></span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span><a href='javascript:' class='sec2TabBt'>IR자료실</a></span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span><a href='javascript:' class='sec2TabBt'>공고</a></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div class='graph-container'>
+					<div>
+						<div class='graph-txt'>
+							<h3>재무정보</h3>
+							<ul class='digital'>
+								<span>[</span>
+								<li>2020</li>
+								<span>-</span>
+								<li>03</li>
+								<span>-</span>
+								<li>11</li>
+								<span>&nbsp;</span>
+								<li>17</li>
+								<li>36</li>
+								<span>:</span>
+								<li>07</li>
+								<span>:</span>								
+								<li>78</li>
+								<span>]</span>
+							</ul>
+						</div>
+					
+						
+						<div  class='graph-bar'>
+							<p>50K &nbsp; <i></i></p>
+							<p>40K &nbsp; <i></i></p>
+							<p>30K &nbsp; <i></i></p>
+							<p>20K &nbsp; <i></i></p>
+							<p>10K &nbsp; <i></i></p>
+							<p>0 &nbsp; &nbsp; <i></i></p>
+							<p>	10K &nbsp; <i></i></p>
+							<div class='graph-nameRow1'>
+								<ul class='fixedclear'>
+									<li><span>자산총계</span></li>
+									<li><span>부채총계</span></li>
+									<li><span>자본총계</span></li>
+									<li><span>매출액</span></li>
+									<li><span>매출총이익(손실)</span></li>
+									<li><span>당기순이익(손실)</span></li>
+								</ul>
+							</div>
+							<div class='graph-nameRow2'>
+								<span>재무항목</span>
+							</div>
+						</div>
+						
+						<div class='graph-wrap'>
+							<ul class='fixedclear'>
+								<li class='graph graph1 blind'><div><span>그래프</span></div></li>
+								<li class='graph graph2 blind'><div><span>그래프</span></div></li>
+								<li class='graph graph3 blind'><div><span>그래프</span></div></li>
+								<li class='graph graph4 blind'><div><span>그래프</span></div></li>
+								<li class='graph graph5 blind'><div><span>그래프</span></div></li>
+								<li class='graph graph6 blind'><div><span>그래프</span></div></li>
+								<li class='graph graph7 blind'><div><span>그래프</span></div></li>
+								<li class='graph graph8 blind'><div><span>그래프</span></div></li>
+								<li class='graph graph9 blind'><div><span>그래프</span></div></li>
+								<li class='graph graph10 blind'><div><span>그래프</span></div></li>
+								<li class='graph graph11 blind'><div><span>그래프</span></div></li>
+								<li class='graph graph12 blind'><div><span>그래프</span></div></li>
+								<li class='graph graph13 blind'><div><span>그래프</span></div></li>
+								<li class='graph graph14 blind'><div><span>그래프</span></div></li>
+								<li class='graph graph15 blind'><div><span>그래프</span></div></li>
+								<li class='graph graph16 blind'><div><span>그래프</span></div></li>
+								<li class='graph graph17 blind'><div><span>그래프</span></div></li>
+								<li class='graph graph18 blind'><div><span>그래프</span></div></li>
+								
+							</ul>
+
+							<ul class='graph-view-wrap'>
+								<li class='graph-view graph-view1'>
+									<div>
+										<h4>자산총계</h4>
+										<i>2018.12</i>
+										<p>19.5K</p>
+									</div>
+								</li>
+								<li class='graph-view graph-view2'>
+									<div>
+										<h4>자산총계</h4>
+										<i>2017.12</i>
+										<p>14.3K</p>
+									</div>
+								</li>
+								<li class='graph-view graph-view3'>
+									<div>
+										<h4>자산총계</h4>
+										<i>2016.12</i>
+										<p>9.71K</p>
+									</div>
+								</li>
+								<li class='graph-view graph-view4'>
+									<div>
+										<h4>부채총계</h4>
+										<i>2018.12</i>
+										<p>6.67K</p>
+									</div>
+								</li>
+								<li class='graph-view graph-view5'>
+									<div>
+										<h4>부채총계</h4>
+										<i>2017.12</i>
+										<p>3.81K</p>
+									</div>
+								</li>
+								<li class='graph-view graph-view6'>
+									<div>
+										<h4>부채총계</h4>
+										<i>2016.12</i>
+										<p>1.73K</p>
+									</div>
+								</li>
+								<li class='graph-view graph-view7'>
+									<div>
+										<h4>자본총계</h4>
+										<i>2018.12</i>
+										<p>12.8K</p>
+									</div>
+								</li>
+								<li class='graph-view graph-view8'>
+									<div>
+										<h4>자본총계</h4>
+										<i>2017.12</i>
+										<p>10.5K</p>
+									</div>
+								</li>
+								<li class='graph-view graph-view9'>
+									<div>
+										<h4>자본총계</h4>
+										<i>2016.12</i>
+										<p>7.98K</p>
+									</div>
+								</li>
+								<li class='graph-view graph-view10'>
+									<div>
+										<h4>매출액</h4>
+										<i>2018.12</i>
+										<p>46.4K</p>
+									</div>
+								</li>
+								<li class='graph-view graph-view11'>
+									<div>
+										<h4>매출액</h4>
+										<i>2017.12</i>
+										<p>20.1K</p>
+									</div>
+								</li>
+								<li class='graph-view graph-view12'>
+									<div>
+										<h4>매출액</h4>
+										<i>2016.12</i>
+										<p>27.3K</p>
+									</div>
+								</li>
+								<li class='graph-view graph-view13'>
+									<div>
+										<h4>매출총이익(손실)</h4>
+										<i>2018.12</i>
+										<p>3.34K</p>
+									</div>
+								</li>
+								<li class='graph-view graph-view14'>
+									<div>
+										<h4>매출총이익(손실)</h4>
+										<i>2017.12</i>
+										<p>-1.12K</p>
+									</div>
+								</li>
+								<li class='graph-view graph-view15'>
+									<div>
+										<h4>매출총이익(손실)</h4>
+										<i>2016.12</i>
+										<p>2.95K</p>
+									</div>
+								</li>
+								<li class='graph-view graph-view16'>
+									<div>
+										<h4>당기순이익(손실)</h4>
+										<i>2018.12</i>
+										<p>2.32K</p>
+									</div>
+								</li>
+								<li class='graph-view graph-view17'>
+									<div>
+										<h4>당기순이익(손실)</h4>
+										<i>2017.12</i>
+										<p>-2.45K</p>
+									</div>
+								</li>
+								<li class='graph-view graph-view18'>
+									<div>
+										<h4>당기순이익(손실)</h4>
+										<i>2016.12</i>
+										<p>701K</p>
+									</div>
+								</li>
+								
+								
+							</ul>	
+						</div>
+						
+						<div class='graph-year-wrap'>
+							<div>
+								<i class='color-div1'></i>
+								<span>2018.12</span>
+								<i class='color-div2'></i>
+								<span>2017.12</span>
+								<i class='color-div3'></i>
+								<span>2016.12</span>
+							</div>
+							
+						</div>
+					</div> <!--여백 끝-->
+				</div> <!--그래프 컨테이너 끝-->
+			</div>
+		</section>
+		
+		<section id='section3'>
+			<div>
+				<h2 class='blind'></h2>
+				<div class='sec3-tabMenu'>
+					<div>
+						<span><a href='javascript:' class='tabMenuBt addBg' title='대차대조표'>대차대조표</a></span>
+						<span><a href='javascript:' class='tabMenuBt' title='손익계산서'>손익계산서</a></span>
+						<span><a href='javascript:' class='tabMenuBt' title='현금흐름관련지표'>현금흐름관련지표</a></span>
+					</div>
+				</div>
+				
+				<div class='sec3-board sec3-board1'>
+					<table>
+						<colgroup>
+							<col>
+							<col>
+							<col>
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th rowspan="2">재무 항목</th>
+								<th colspan="3">2018. 12</th>
+								<th colspan="3">2017. 12</th>
+								<th colspan="3" class="br_none">2016. 12</th>
+							</tr>
+							<tr>
+								<th>금액(백만원)</th>
+								<th>구성비(%)</th>
+								<th>증감률(%)</th>
+								<th>금액(백만원)</th>
+								<th>구성비(%)</th>
+								<th>증감률(%)</th>
+								<th>금액(백만원)</th>
+								<th>구성비(%)</th>
+								<th class="br_none">증감률(%)</th>
+							</tr>
+							<tr>
+								<td>유동자산(계)</td>
+								<td>11,463</td>
+								<td>58.9</td>
+								<td>38.5</td>
+								<td>8,277</td>
+								<td>57.7</td>
+								<td>74.6</td>
+								<td>4,740</td>
+								<td>48.8</td>
+								<td class="br_none">-38.9</td>
+							</tr>
+							<tr>
+								<td>비유동자산(계)</td>
+								<td>7,993</td>
+								<td>41.1</td>
+								<td>31.8</td>
+								<td>6,063</td>
+								<td>42.3</td>
+								<td>21.9</td>
+								<td>4,973</td>
+								<td>51.2</td>
+								<td class="br_none">24.6</td>
+							</tr>
+							<tr>
+								<td>자산총계</td>
+								<td>19,457</td>
+								<td>100</td>
+								<td>35.7</td>
+								<td>14,340</td>
+								<td>100</td>
+								<td>47.6</td>
+								<td>9,713</td>
+								<td>100</td>
+								<td class="br_none">-17.3</td>
+							</tr>
+							<tr>
+								<td>유동부채(계)</td>
+								<td>19,457</td>
+								<td>100</td>
+								<td>35.7</td>
+								<td>14,340</td>
+								<td>100</td>
+								<td>47.6</td>
+								<td>9,713</td>
+								<td>100</td>
+								<td class="br_none">-17.3</td>
+							</tr>
+							<tr>
+								<td>자산총계</td>
+								<td>19,457</td>
+								<td>100</td>
+								<td>35.7</td>
+								<td>14,340</td>
+								<td>100</td>
+								<td>47.6</td>
+								<td>9,713</td>
+								<td>100</td>
+								<td class="br_none">-17.3</td>
+							</tr>
+							<tr>
+								<td>자산총계</td>
+								<td>19,457</td>
+								<td>100</td>
+								<td>35.7</td>
+								<td>14,340</td>
+								<td>100</td>
+								<td>47.6</td>
+								<td>9,713</td>
+								<td>100</td>
+								<td class="br_none">-17.3</td>
+							</tr>
+							<tr>
+								<td>자산총계</td>
+								<td>19,457</td>
+								<td>100</td>
+								<td>35.7</td>
+								<td>14,340</td>
+								<td>100</td>
+								<td>47.6</td>
+								<td>9,713</td>
+								<td>100</td>
+								<td class="br_none">-17.3</td>
+							</tr>
+							<tr>
+								<td>자산총계</td>
+								<td>19,457</td>
+								<td>100</td>
+								<td>35.7</td>
+								<td>14,340</td>
+								<td>100</td>
+								<td>47.6</td>
+								<td>9,713</td>
+								<td>100</td>
+								<td class="br_none">-17.3</td>
+							</tr>
+							<tr>
+								<td>자산총계</td>
+								<td>자산총계</td>
+								<td>자산총계</td>
+								<td>자산총계</td>
+								<td>자산총계</td>
+								<td>자산총계</td>
+								<td>자산총계</td>
+								<td>자산총계</td>
+								<td>자산총계</td>
+								<td class="br_none">자산총계</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>			
+				<div class='sec3-board sec3-board2'>
+					<table>
+						<colgroup>
+							<col>
+							<col>
+							<col>
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th rowspan="2">재무 항목</th>
+								<th colspan="3">2018. 12</th>
+								<th colspan="3">2017. 12</th>
+								<th colspan="3" class="br_none">2016. 12</th>
+							</tr>
+							<tr>
+								<th>금액(백만원)</th>
+								<th>구성비(%)</th>
+								<th>증감률(%)</th>
+								<th>금액(백만원)</th>
+								<th>구성비(%)</th>
+								<th>증감률(%)</th>
+								<th>금액(백만원)</th>
+								<th>구성비(%)</th>
+								<th class="br_none">증감률(%)</th>
+							</tr>
+							<tr>
+								<td>매출액</td>
+								<td>46,446</td>
+								<td>100</td>
+								<td>130.8</td>
+								<td>20,124</td>
+								<td>100</td>
+								<td>-26.3</td>
+								<td>27,321</td>
+								<td>100</td>
+								<td class="br_none">43.8</td>
+							</tr>
+							<tr>
+								<td>매출총이익(손실)</td>
+								<td>3,341</td>
+								<td>7.2</td>
+								<td>399.3</td>
+								<td>-1,116</td>
+								<td>-5.5</td>
+								<td>-137.8</td>
+								<td>2,951</td>
+								<td>10.8</td>
+								<td class="br_none">5.2</td>
+							</tr>
+							<tr>
+								<td>영업이익(손실)</td>
+								<td>1,185</td>
+								<td>2.6</td>
+								<td>143.5</td>
+								<td>-2,726</td>
+								<td>-13.5</td>
+								<td>-401.3</td>
+								<td>905</td>
+								<td>3.3</td>
+								<td class="br_none">-34.1</td>
+							</tr>
+							<tr>
+								<td>영업외수익</td>
+								<td>577</td>
+								<td>1.2</td>
+								<td>151</td>
+								<td>230</td>
+								<td>1.1</td>
+								<td>57.2</td>
+								<td>146</td>
+								<td>.5</td>
+								<td class="br_none">-47.8</td>
+							</tr>
+							<tr>
+								<td>영업외비용</td>
+								<td>352</td>
+								<td>.8</td>
+								<td>-37.4</td>
+								<td>563</td>
+								<td>2.8</td>
+								<td>324</td>
+								<td>133</td>
+								<td>.5</td>
+								<td class="br_none">-22.1</td>
+							</tr>
+							<tr>
+								<td>당기순이익(손실)</td>
+								<td>2,320</td>
+								<td>5</td>
+								<td>194.8	</td>
+								<td>-2,448</td>
+								<td>-12.2</td>
+								<td>-449.4</td>
+								<td>701</td>
+								<td>2.6</td>
+								<td class="br_none">-42.1</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class='sec3-board sec3-board3'>
+					<table>
+						<colgroup>
+							<col>
+							<col>
+							<col>
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th rowspan="2">재무 항목</th>
+								<th colspan="2">2018. 12</th>
+								<th colspan="2">2017. 12</th>
+								<th colspan="2" class="br_none">2016. 12</th>
+							</tr>
+							<tr>
+								<th>증감률(%)</th>
+								<th>금액(백만원)</th>
+								<th>구성비(%)</th>
+								<th>증감률(%)</th>
+								<th>금액(백만원)</th>
+								<th class="br_none">증감률(%)</th>
+							</tr>
+							<tr>
+								<td>영업활동으로인한현금흐름</td>
+								<td>637</td>
+								<td>122.8</td>
+								<td>-2,801</td>
+								<td>-788.1</td>
+								<td>-315</td>
+								<td class="br_none">-214.1</td>
+							</tr>
+							<tr>
+								<td>투자활동으로인한현금흐름</td>
+								<td>289</td>
+								<td>294.7</td>
+								<td>-148</td>
+								<td>-352</td>
+								<td>-33</td>
+								<td class="br_none">-112.2</td>
+							</tr>
+							<tr>
+								<td>재무활동으로인한현금흐름</td>
+								<td>350</td>
+								<td>-93</td>
+								<td>4,995</td>
+								<td>0</td>
+								<td>-20</td>
+								<td class="br_none">98.5</td>
+							</tr>
+							<tr>
+								<td>현금의증가(감소)</td>
+								<td>1,276</td>
+								<td>-37.6</td>
+								<td>2,045</td>
+								<td>655.7</td>
+								<td>-368</td>
+								<td class="br_none">51.2</td>
+							</tr>
+							<tr>
+								<td>기초의현금</td>
+								<td>4,116</td>
+								<td>89.5</td>
+								<td>2,173</td>
+								<td>-14.4</td>
+								<td>2,540</td>
+								<td class="br_none">-22.8</td>
+							</tr>
+							<tr>
+								<td>기말의현금</td>
+								<td>5,391</td>
+								<td>31</td>
+								<td>4,116</td>
+								<td>89.5</td>
+								<td>2,173</td>
+								<td class="br_none">-14.4</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+				
+			</div>
+		</section>
+		
+		
+	</main>
+			
+	<footer id='footer'>
+		<div> <!--100%, 보더바텀-->
+			<div class='footer-row1'>
+				<div>
+					<ul> 
+						<li>
+							<div>
+								<span>
+									<a href='#'>ABOUT</a>
+								</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span>
+									<a href='#'>WORK</a>
+								</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span>
+									<a href='#'>PRESS</a>
+								</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span>
+									<img src='img/f_logo.png' alt=''>
+								</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span>
+									<a href='#'>IR</a>
+								</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span>
+									<a href='#'>CONTACT</a>
+								</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span>
+									<a href='#'>LANGUAGE</a>
+								</span>
+							</div>
+						</li>
+					</ul>
+				</div>	
+			</div>
+			<div class='footer-row2'>
+				<div> 
+					<div class='footer-row2-top'>
+						<p>
+							서울특별시 마포구 월드컵북로 361 한솔교육빌딩 11층 (상암동)
+						</p>
+					</div>
+					<div class='footer-row2-bottom fixedclear'>
+						<p>
+							(03908)11F,Hansol BLDG,361,World Cup buk-ro,Mapo-gu,Seoul,Korea(Sangam-dong)TEL 02.2088.2585FAX. 02.2088.2589
+						</p>
+						<span>
+							Copyright (c) ASTORY. All Rights Reserved
+						</span>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</footer>		
+	
+	<div class='goTop-wrap'>
+		<div>
+			<a href='javascript:' class='gotopBt' title='top'>
+				<span class='goTop-Bg'>
+					<i class='icon fas fa-long-arrow-alt-up'></i>
+					<span>TOP</span>
+				</span>
+			</a>
+		</div>
+	</div>	
+	
+</div>
+</body>
+</html>
+
+
+
+
